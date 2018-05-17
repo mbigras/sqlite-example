@@ -17,6 +17,7 @@ bundle exec ruby migration.rb
 sqlite3 test.db .schema
 sqlite3 test.db .tables
 sqlite3 -header test.db 'select * from things'
+sqlite3 test.db 'select * from things where id = 1;'
 ```
 
 ## Note about install sqlite
